@@ -10,6 +10,7 @@ public class SavingsAccount {
 	
 	public SavingsAccount(int newAccountNumber) {
 		accountNumber = newAccountNumber;
+		nextFreeAccountNumber++;
 	}
 	
 	public int getAccountNumber( ) {
