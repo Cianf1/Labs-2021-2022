@@ -13,7 +13,8 @@ public class Clock {
 		
 		
 		t.tick();
-		while(t.getSecond() != 0) {
+		
+		while(t.getSecond() != 0) {              //ticks time by seconds until conditions are met i.e on the minute  
 		long current2 = System.currentTimeMillis();  
 		
 												//Tick the time 
