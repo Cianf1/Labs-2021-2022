@@ -11,15 +11,18 @@ public class Clock {
 		
 		long current = System.currentTimeMillis();
 		
-				
-		for(int i=0; i < 60; i++);{
-		long current2 = System.currentTimeMillis();
-														//Tick the time 
+		
+		t.tick();
+		while(t.getSecond() != 0) {
+		long current2 = System.currentTimeMillis();  
+		
+												//Tick the time 
+		if (current2 - current >= 1000) {
 		t.tick();
 		System.out.println(t.toString());
-		current = current;
+		current = current2;
 		
-		
+		}
 		
 		}
 	
